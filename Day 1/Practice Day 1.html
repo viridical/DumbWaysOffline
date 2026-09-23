@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Practice Day 1.css">
+  <title>Poco</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-#ffd403 fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><img class="logo" src="data:image/png;base64,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" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-black px-3 rounded-pill" href="#">Buy Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section class="Hero pt-5 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-3 fw-bold mb-3">Poco F8</h1>
+        <p class="lead mb-4">Poco F8 adalah sebuah smartphone yang memfokuskan pada performa HP</p>
+        <a href="#" class="btn btn-primary btn-order">Order Now</a>
+      </div>
+      <div class="col-lg-6 text-center d-none d-lg-block">
+        <img class="img" src="https://i02.appmifile.com/212_item_id/05/01/2026/c626e3ccddc0321b7771459e7916b171.png" alt="Poco F8">
+      </div>
+    </div>
+  </div>
+</sections>
+<section id="features" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Kenapa harus POCO ?</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="feature-card text-center">
+          <div class="feature-icon mb-3 text-primary">
+          </div>
+          <p class="fw-bold">Performa yang Ekstrem</p>
+        </div>
+      </div>
+        <div class="col-12 col-md-6 col-lg-3">
+        <div class="feature-card text-center">
+          <div class="feature-icon mb-3 text-primary">
+          </div>
+          <p class="fw-bold">Baterai tahan lama</p>
+    </div>
+  </div>
+    <div class="col-12 col-md-6 col-lg-3">
+        <div class="feature-card text-center">
+          <div class="feature-icon mb-3 text-primary">
+          </div>
+          <p class="fw-bold">Kualitas audio kelas atas</p>
+    </div>
+  </div>
+    <div class="col-12 col-md-6 col-lg-3">
+        <div class="feature-card text-center">
+          <div class="feature-icon mb-3 text-primary">
+          </div>
+          <p class="fw-bold">Kamera yang jernih</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>

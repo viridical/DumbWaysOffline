@@ -1,0 +1,32 @@
+.logo{
+    width: 50px;
+}
+.img{
+    height: 450px;
+}
+.body{
+    padding-top: 50px;
+    .hero{
+        background: black;
+        padding: 60px;
+    }
+    .feature-icon {
+        font-size: 40px;
+        color: black;
+        margin-bottom: 15px;
+    }
+    .feature-card{
+        transition: transform 0.2s;
+        border-radius: 12px;
+        padding: 20px;
+    }
+    .feature-card:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
+    }
+    .btn-order{
+        padding: 12px 40px;
+        font-weight: 600;
+        border-radius: 50px;
+    }
+}

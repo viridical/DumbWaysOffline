@@ -1,0 +1,18 @@
+.logo {
+    width: 45px;
+    height: 40px;
+}
+
+.expense,
+.list {
+    border-radius: 10px;
+    background: #fff;
+}
+
+.expense-header {
+    padding: 16px 16px 0;
+}
+
+.expense-item:last-child {
+    border-bottom: none !important;
+}

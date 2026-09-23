@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Day3.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlsObEXCHuZABYB0X0TnzJy9wwHeUoq6RJXfFZJJqZgQ&s=10" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      Expense Tracker
+    </a>
+  </div>
+</nav>
+<div class="container">
+    <div class="row g-4">
+        <div class="col-lg-5">
+            <div class="expense shadow-sm border-0">
+                <div class="expense-header text-success fw-bold">Tambah Pengeluaran</div>
+                <div class="expense-body p-4">
+                    <div id="alertError" class="alert bg-danger py-2 d-none" role="alert">Harap Isi Nama dan Pengeluaran!</div>
+                    <form id="expenseForm">
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label fw-bold small">Nama Pengeluaran</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Contoh: Makan siang" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="nominalInput" class="form-label fw-bold small">Nominal / Harga (Rp)</label>
+                            <input type="text" id="nominalInput" class="form-control" placeholder="Contoh: 50000 atau Rp50.000" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100 fw-bold py-2">Simpan Data</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <div class="list shadow-sm border-0 h-100">
+                <div class="list-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="list-header bg-white fw-bold py-3 border-bottom-0">Daftar Pengeluaran</div>
+                        <span class="badge bg-danger fs-6" id="totalExpense">Rp 0</span>
+                    </div>
+                    <div id="listExpense"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Day3.js"></script>
+</body>
+</html>
